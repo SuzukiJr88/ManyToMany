@@ -1,0 +1,22 @@
+2024-09-19 14:14:20.213277-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TB_USERS ([*]1, 'MARIO')"; expected "identifier"; SQL statement:
+INSERT INTO TB_USERS (1, 'MARIO') [42001-224]
+2024-09-19 14:14:40.430283-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TB_USERS VALUES (1, 'MARIO')\000d\000a[*]INSERT INTO TB_USERS VALUES (2, 'VALERIA')\000d\000aINSERT INTO TB_USERS VALUES (3, 'LEO')"; SQL statement:
+INSERT INTO TB_USERS VALUES (1, 'MARIO')
+INSERT INTO TB_USERS VALUES (2, 'VALERIA')
+INSERT INTO TB_USERS VALUES (3, 'LEO') [42000-224]
+2024-09-19 14:14:47.453943-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TB_USERS VALUES (1, 'MARIO'),\000d\000aINSERT [*]INTO TB_USERS VALUES (2, 'VALERIA'),\000d\000aINSERT INTO TB_USERS VALUES (3, 'LEO')"; SQL statement:
+INSERT INTO TB_USERS VALUES (1, 'MARIO'),
+INSERT INTO TB_USERS VALUES (2, 'VALERIA'),
+INSERT INTO TB_USERS VALUES (3, 'LEO') [42000-224]
+2024-09-19 14:14:52.465681-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TB_USERS VALUES (1, 'MARIO'),[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO TB_USERS VALUES (1, 'MARIO'), [42001-224]
+2024-09-19 14:17:39.467466-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO USERS_CARS VALUES (2,2[*]USERS_CARS )"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO USERS_CARS VALUES (2,2USERS_CARS ) [42001-224]
+2024-09-19 14:22:54.191439-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO [*]FROM USERS_CARS  VALUES (1,1)"; expected "identifier"; SQL statement:
+INSERT INTO FROM USERS_CARS  VALUES (1,1) [42001-224]
